@@ -1,13 +1,178 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>amplify</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bertithas - Desayuno + Comidas + Especiales + Mucho Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo de Bertithas">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Quiénes somos</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Bertitha's</h1>
+            <p>"Desayuno + Comidas + Especiales + Mucho Amor"</p>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Quiénes somos</h2>
+                <p class="mission-vision">**Misión:** Ofrecer buena comida, llena de amor y sabrosura, asi como satisfacer y deleitar el gusto de todas nuestras estrellitas.</p>
+                <p class="mission-vision">**Visión:** Ser el servicio de comida a domicilio preferido por su calidez, sabor y excelente servicio, llevando felicidad a cada hogar.</p>
+                <p class="history">**Nuestra Historia:** Todo comenzó en la cocina de mi mami Bertha, de ahí el nombre "Bertithas". Con sus recetas secretas y mucho cariño, decidió compartir su sazón con el mundo, creando un negocio que hoy nos permite llevar un pedacito de su hogar a tu mesa.</p>
+                <div class="team">
+                    <h3>Nuestro Equipo</h3>
+                    <div class="team-member">
+                        <img src="img/marce.jpg" alt="Miembro del equipo 1">
+                        <h4>Marce</h4>
+                        <p>Fundadora y Chef Principal</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/fran.jpg" alt="Miembro del equipo 2">
+                        <h4>Fran</h4>
+                        <p>Logística y Reparto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="menu" class="menu-section">
+            <h2>Nuestro Menú</h2>
+            
+            <div class="daily-special-container">
+                <div class="menu-item special-of-the-day">
+                    <h3>Especial del Día</h3>
+                    <img src="img/especial.jpg" alt="Plato Especial del Día">
+                    <p>¡No te pierdas hoy nuestro delicioso plato especial! ¡Pregunta a la vendedora!</p>
+                </div>
+                <div class="menu-item daily-water">
+                    <h3>Agua del Día</h3>
+                    <img src="/img/especial-agua.jpg" alt="Agua del Día">
+                    <p>Hoy refréscate con nuestra agua fresca del día. ¡Pregunta a la vendedora!</p>
+                </div>
+            </div>
+
+            <div class="full-menu-container">
+                <h3>Comidas</h3>
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <img src="img/baguette.jpg" alt="Baguettes">
+                        <h4>Baguette</h4>
+                        <p>Sabrosisima baguette compuesta por pan integral, pollo a la plancha, jamon de pavo, tocino, queso mozzarella, lechuga, jitomate, cebolla y pepino.</p>
+                        <span class="price">$90.00</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/chilaquiles.jpg" alt="Chilaquiles Rojos">
+                        <h4>Chilaquiles Rojos</h4>
+                        <p>Deliciosos totopos bañados en salsa roja, con pollo, crema y queso fresco. ¡Elige el picante!</p>
+                        <span class="price">$65.00</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/omelette.jpg" alt="Omelette de huevo">
+                        <h4>Omelette</h4>
+                        <p>Delicioso omelette compuesto por dos huevitos y queso oaxaca, acompanado de frijolitos refritos, ensalada mixta y salsa picante.</p>
+                        <span class="price">$70.00</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/waffles.jpg" alt="Waffles">
+                        <h4>Waffles</h4>
+                        <p>Deliciosos, crujientes por fuera y suaves por dentro waffles, acompanados de frutita de temporadam puede pedirlos con maple, mermelada de fresa o lechera de complemento (solo eligue uno ).</p>
+                        <span class="price">$90.00</span>
+                    </div>
+                </div>
+                
+                <h3>Desayunos</h3>
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <img src="img/desayuno1.jpg" alt="Desayunos con frutita">
+                        <h4>Desayunos con frutita </h4>
+                        <p>Con frutita de la temporada.</p>
+                        <span class="price">$85.00</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/desayuno2.jpg" alt="Ricos croissants">
+                        <h4>Molletes Gratinados</h4>
+                        <p>Delicioso cuernito, elige la especialidad (proteina) que prefieras, ademas lleva queso asadero,lechuga,jitomate,cebolla y pepino.</p>
+                        <span class="price">$80.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Nuestra Galería</h2>
+            <div class="gallery-grid">
+                <img src="img/galeria1.jpg" alt="Foto de comida 1">
+                <img src="img/galeria2.jpg" alt="Foto de comida 2">
+                <img src="img/galeria3.jpg" alt="Foto de comida 3">
+                <img src="img/galeria4.jpg" alt="Foto de comida 4">
+                <img src="img/galeria5.jpg" alt="Foto de comida 5">
+                <img src="img/galeria6.jpg" alt="Foto de comida 6">
+                <img src="img/galeria7.jpg" alt="Foto de comida 7">
+                <img src="img/galeria8.jpg" alt="Foto de comida 8">
+                <img src="img/galeria9.jpg" alt="Foto de comida 9">
+                <img src="img/galeria10.jpg" alt="Foto de comida 10">
+                <img src="img/galeria11.jpg" alt="Foto de comida 11">
+                <img src="img/galeria12.jpg" alt="Foto de comida 12">
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contáctanos</h2>
+            <div class="contact-info">
+                <p><strong>Teléfono:</strong> (52) 314-107-6066</p>
+                <p><strong>Email:</strong> marchgonza@hotmail..com</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/Bertitha.cs?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/bertithas.mx?igsh=ZjhiMHU3bXVoejhk" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/c/5213141076066" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p><strong>Dirección:</strong> Niños heroes 21, El Refugio, 48850 La Huerta Jalisco, Mexico</p>
+            <p>&copy; 2025 Bertithas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/src/js/script.js"></script>
+</body>
 </html>
